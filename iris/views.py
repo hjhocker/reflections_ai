@@ -8,7 +8,7 @@ import json
 import requests
 
 def get_iris_data(request):
-    iris_data = requests.get("http://localhost:9000/api/data/iris").text;
+    iris_data = requests.get("http://harrisonhocker.com/api/data/iris").text;
     return HttpResponse(iris_data, content_type="application/json")
 
 def get_object(request):
