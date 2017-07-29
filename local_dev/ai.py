@@ -33,7 +33,7 @@ trainingData = np.c_[trainingData]
 X_train, X_test, y_train, y_test = train_test_split(trainingData, y, test_size=.5,
                                                     random_state=0)
 
-random_state = np.random.RandomState(0)
+random_state = np.random.RandomState(9)
 classifier = OneVsRestClassifier(svm.SVC(kernel='linear', probability=True,
                                  random_state=random_state))
 
